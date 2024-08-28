@@ -1,4 +1,4 @@
-import { getProductList } from "@/services/product";
+import { getProductList } from "@/src/services/product";
 import Link from "next/link";
 
 const Products = async () => {

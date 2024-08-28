@@ -1,4 +1,4 @@
-import { getOneProduct } from "@/services/product";
+import { getOneProduct } from "@/src/services/product";
 import Image from "next/image";
 
 export default async function Page({ params }) {
@@ -18,7 +18,7 @@ export default async function Page({ params }) {
 
 	return (
 		<div>
-			<div className="flex flex-col items-start p-20 lg:flex-row">
+			<div className="flex flex-col items-start md:p-20 lg:flex-row">
 				<Image
 					src={imageSrc}
 					alt={productData.productName}
