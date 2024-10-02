@@ -6,6 +6,7 @@ export const getProductList = async () => {
 	const res = await fetch(url, {
 		next: { tags: [TAG_PRODUCTS] },
 		credentials: "include",
+		cache: "no-store",
 	});
 
 	if (!res.ok) {
@@ -19,6 +20,7 @@ export const getOneProduct = async (slug) => {
 	const res = await fetch(`${url}/${slug}`, {
 		next: { tags: [TAG_PRODUCTS] },
 		credentials: "include",
+		cache: "no-store",
 	});
 
 	if (!res.ok) {

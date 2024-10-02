@@ -18,14 +18,16 @@ export default async function Page({ params }) {
 
 	return (
 		<div>
-			<div className="flex flex-col items-start p-20 lg:flex-row">
-				<Image
-					src={imageSrc}
-					alt={productData.productName}
-					width={400}
-					height={400}
-					className="p-10"
-				/>
+			<div className="flex flex-col items-start p-3 md:p-20 lg:flex-row">
+				<div className="w-50%">
+					<Image
+						src={imageSrc}
+						alt={productData.productName}
+						width={400}
+						height={400}
+						className="p-10"
+					/>
+				</div>
 
 				<section className="px-10 md:border-l-4 md:border-l-yellow-400">
 					<div>
